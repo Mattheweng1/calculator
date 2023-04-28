@@ -1,0 +1,78 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Bruno Ace', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 8vmin;
+    text-align: center;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.75);
+    opacity: 0.75;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 8px;
+    background-color: none;
+}
+
+#calcDisplay {
+    background-color: darkgray;
+    color: orange;
+    font-size: 12vmin;
+    flex: 1;
+    margin: 8px;
+    padding: 8px 32px;
+    opacity: 0.75;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#calcButtons {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    row-gap: 8px;
+    margin: 8px;
+    opacity: 0.75;
+}
+
+#calcButtons div {
+    display: flex;
+    flex: 1;
+    column-gap: 8px;
+}
+
+#calcButtons div button {
+    flex: 1;
+    font-size: 6vmin;
+    border: none;
+}
+
+button {
+    background-color: white;
+}
+
+#calcButtons div #clear {
+    flex: 1;
+}
+
+#equals {
+    background-color: orange;
+}
