@@ -69,10 +69,6 @@ button {
     background-color: white;
 }
 
-#calcButtons div #clear {
-    flex: 1;
-}
-
 #equals {
     background-color: orange;
 }
