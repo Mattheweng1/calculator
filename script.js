@@ -234,3 +234,23 @@ clrBtn.addEventListener('click', () => clr());
 
 const delBtn = document.getElementById("del");
 delBtn.addEventListener('click', () => del());
+
+// Add keyboard functionality by simulating clicks.
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Backspace' || event.key === 'Delete') {
+        delBtn.click();
+    } else if (event.key === 'Escape') {
+        clrBtn.click();
+    } else if (event.key === '*') {
+        document.getElementById("multiply").click();
+    } else if (event.key === 'Enter') {
+        equalsBtn.click();
+    } else {
+        const btns = document.querySelectorAll("button");
+        btns.forEach((btn) => {
+            if (btn.textContent === event.key) btn.click();
+        });
+    }
+});
+
