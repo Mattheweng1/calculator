@@ -18,8 +18,8 @@ body {
     font-weight: bold;
     font-size: 8vmin;
     text-align: center;
-    background-color: black;
-    color: rgba(255, 255, 255, 0.75);
+    background-color: none;
+    color: black;
     opacity: 0.75;
 }
 
@@ -32,16 +32,15 @@ body {
 }
 
 #calcDisplay {
-    background-color: darkgray;
+    background-color: black;
     color: orange;
-    font-size: 12vmin;
-    flex: 1;
+    font-size: 9vmin;
+    flex: 2;
     margin: 8px;
     padding: 8px 32px;
     opacity: 0.75;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    text-align: right;
+    overflow-wrap: break-word;
 }
 
 #calcButtons {
@@ -71,4 +70,13 @@ button {
 
 #equals {
     background-color: orange;
+}
+
+#clear,
+#del {
+    background-color: red;
+}
+
+.operator {
+    background-color: orangered;
 }
