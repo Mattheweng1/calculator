@@ -21,6 +21,7 @@ body {
     background-color: none;
     color: black;
     opacity: 0.75;
+    padding: 8px;
 }
 
 #calculator {
@@ -72,11 +73,20 @@ button {
     background-color: orange;
 }
 
-#clear,
+#clr,
 #del {
     background-color: red;
 }
 
 .operator {
     background-color: orangered;
+}
+
+#message {
+    font-size: 3vmin;
+    text-align: center;
+    background-color: black;
+    color: orange;
+    opacity: 0.75;
+    padding: 8px;
 }
