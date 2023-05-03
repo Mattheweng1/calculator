@@ -70,7 +70,13 @@ function operate() {
             numStrTwo = "";
             break;
     }
+
     numStrOne = roundNumStr((+numStrOne).toString());
+
+    if (numStrOne === 'NaN') {
+        updateMessage("I simply, truly, regrettably cannot handle a number that big.");
+    }
+
     updateDisplay();
 }
 
