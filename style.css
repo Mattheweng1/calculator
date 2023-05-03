@@ -44,7 +44,7 @@ body {
     overflow-wrap: break-word;
 }
 
-#calcButtons {
+#calcBtns {
     display: flex;
     flex-direction: column;
     flex: 5;
@@ -53,20 +53,23 @@ body {
     opacity: 0.75;
 }
 
-#calcButtons div {
+#calcBtns div {
     display: flex;
     flex: 1;
     column-gap: 8px;
 }
 
-#calcButtons div button {
+#calcBtns div .btn {
     flex: 1;
     font-size: 6vmin;
     border: none;
 }
 
-button {
+.btn {
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #equals {

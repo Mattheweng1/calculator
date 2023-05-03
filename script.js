@@ -218,7 +218,7 @@ function del() {
     updateDisplay();
 }
 
-// Add all event listeners to buttons.
+// Add event listeners to divs with '.btn'.
 
 const numBtns = document.querySelectorAll(".num");
 numBtns.forEach((numBtn) => eventEnterNum(numBtn));
@@ -253,7 +253,7 @@ document.addEventListener('keydown', (event) => {
     } else if (event.key === 'Enter') {
         equalsBtn.click();
     } else {
-        const btns = document.querySelectorAll("button");
+        const btns = document.querySelectorAll(".btn");
         btns.forEach((btn) => {
             if (btn.textContent === event.key) btn.click();
         });
