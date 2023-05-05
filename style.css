@@ -70,6 +70,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .07s ease;
 }
 
 #equals {
@@ -92,4 +93,10 @@ body {
     color: orange;
     opacity: 0.75;
     padding: 8px;
+}
+
+.clicked {
+    transform: scale(1.03);
+    border-color: orange;
+    box-shadow: 0 0 1rem orange;
 }

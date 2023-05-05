@@ -243,6 +243,8 @@ delBtn.addEventListener('click', () => del());
 
 // Add keyboard functionality by simulating clicks.
 
+const btns = document.querySelectorAll(".btn");
+
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Backspace' || event.key === 'Delete') {
         delBtn.click();
@@ -253,10 +255,17 @@ document.addEventListener('keydown', (event) => {
     } else if (event.key === 'Enter') {
         equalsBtn.click();
     } else {
-        const btns = document.querySelectorAll(".btn");
         btns.forEach((btn) => {
             if (btn.textContent === event.key) btn.click();
         });
     }
 });
 
+// Add animation on .btn click.
+
+btns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        btn.classList.add('clicked');
+        setTimeout(() => {btn.classList.remove('clicked')}, .07 * 1000);
+    });
+});
